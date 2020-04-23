@@ -34,6 +34,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 
 # Official
 BR_OFFICIAL := true
+BR_MAINTAINER := Kry9toN
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := vince
