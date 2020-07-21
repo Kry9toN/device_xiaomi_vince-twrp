@@ -20,7 +20,7 @@
 #$(call inherit-product, vendor/batik/config/gsm.mk)
 
 # Inherit some common Omni stuff.
-$(call inherit-product, vendor/batik/config/common.mk)
+$(call inherit-product, vendor/omni/config/common.mk)
 $(call inherit-product, build/target/product/embedded.mk)
 
 # Inherit Telephony packages
@@ -32,9 +32,14 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 # Inherit 64bit support
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 
-# Official
-BR_OFFICIAL := true
-BR_MAINTAINER := Kry9toN
+# Orange Fox Stuff
+FOX_USE_BASH_SHELL := 1
+OF_MAINTAINER := Kry9toN
+FOX_VERSION := R11.0
+OF_SCREEN_H := 2160
+FOX_R11 := 1
+OF_USE_LOCKSCREEN_BUTTON := 1
+
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := vince
